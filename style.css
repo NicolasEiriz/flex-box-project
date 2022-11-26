@@ -4,12 +4,15 @@
     box-sizing: border-box;
 }
 
+
 /*with this container in every section we can center it and used an specefic width*/
 .container{
     max-width: 1000px;
     margin: 0 auto;
     padding: 10px 0;
 }
+
+/* NAVBAR */
 
 .navbar{
     background: #1f2937;
@@ -39,3 +42,60 @@
     text-decoration: none;
 
 }
+
+/* HEADER */
+.header{
+background: #1f2937;
+height: 350px;
+}
+
+.header .container{
+    display: flex;
+    justify-content: space-between;
+    /* gap: 20px; */
+}
+
+.header .text{
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.header h1{
+    font-size: 48px;
+    font-weight:900;
+    color: #f9faf8;
+    padding-right: 100px;
+}
+
+.header p{
+    font-size: 18px;
+    color: #e5e7eb;
+    padding-right: 80px;
+}
+
+.header a{
+    background: #3882f6;
+    color: #f9faf8;
+    text-decoration: none;
+    max-width: fit-content;
+    padding: 5px 20px;
+    border-radius: 5px;
+}
+
+.header .image{
+    background: grey;
+    font-size: 18px;
+    color: #e5e7eb;
+    display: flex;
+    align-items: center;
+    max-width: 50%;
+    
+}
+
+.header .image span{
+    padding: 80px 130px;
+}
+
+/* I can't see how to closer the img to the text */

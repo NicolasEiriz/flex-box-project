@@ -4,7 +4,38 @@
     box-sizing: border-box;
 }
 
+/*with this container in every section we can center it and used an specefic width*/
 .container{
     max-width: 1000px;
     margin: 0 auto;
+    padding: 10px 0;
+}
+
+.navbar{
+    background: #1f2937;
+    height: 100px;
+}
+
+.navbar .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar h2{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.navbar ul{
+    display: flex;
+    font-size: 18px;
+    list-style: none;
+    gap: 20px;
+}
+
+.navbar ul a{
+    font-size: 18px;
+    color: #e5e7eb;
+    text-decoration: none;
+
 }

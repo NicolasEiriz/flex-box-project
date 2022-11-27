@@ -143,3 +143,69 @@ height: 350px;
 
 
 /* Quote section */
+.quote{
+  background: #e5e7eb;
+  height: 350px;
+}
+
+.quote .container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 750px;
+}
+.quote figure{
+  display: flex;
+  flex-direction: column;
+}
+.quote p{
+  font-size: 36px;
+  font-style: italic;
+  color: #1f2937;
+}
+
+.quote figcaption{
+  align-self: flex-end;
+  color: #1f2937;
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.signUp{
+  height: 300px;
+  display: flex;
+  align-items: center;
+}
+
+.signUp .container{
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
+  align-items: center;
+  width: 70%;
+  height: 45%;
+  background: #3882f6;
+  border-radius: 10px;
+}
+
+.signUp .text span{
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: 700;
+
+}
+.signUp .text p{
+  font-size: 18px;
+  color: #e5e7eb
+}
+
+.signButton{
+  font-size: 18px;
+  color: #e5e7eb;
+  padding: 5px 30px;
+  border: 2px solid #e5e7eb;
+  text-decoration: none;
+  border-radius: 10px;
+
+}

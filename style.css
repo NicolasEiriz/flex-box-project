@@ -223,78 +223,97 @@ height: 350px;
   color: #e5e7eb
 }
 
-@media (min-width: 700px) and (max-width:800px){
+/* Responsiveness screen 400px */
+@media screen and (max-width: 800px){
   .navbar .container{
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .navbar ul{
+    display: none;
+  }
+  .navbar h2{
+    font-size: 36px;
   }
 
-  .header{
-    height: 700px;
-  }
+ .header{
+   height: 100vh;
+   display: flex;
+   align-items: center;
+
+ }
+
   .header .container{
     flex-direction: column;
     align-items: center;
-    gap: 50px;
   }
 
   .header .text{
     max-width: 100%;
     align-items: center;
-    gap: 20px;
   }
-
-  .header h1{
-    padding: 40px;
-    padding-right: 0;
-    font-size: 60px;
-  }
-
+  .header h1,
   .header p{
-    font-size: 36px;
-    padding: 0 30px;
+    padding: 20px;
     text-align: center;
+
+  }
+.header .image{
+  display: none;
+}
+
+.main{
+  height: 100vh;
+}
+.main .container{
+  padding: 20px;
+  justify-content: center;
+  text-align: center;
+  gap: 50px;
   
-  }
+}
 
-  .header .image{
-    text-align: center;
-    font-size: 24px;
-    
-  }
-
-  .main{
-    height: 650px;
-  }
-
-  .main .container{
-    gap: 40px;
-  }
 .box-container{
+    gap: 50px;
   flex-wrap: wrap;
-  width: 50%;
-  /* flex-direction: column; */
-}
-  .boxes{
-    width: 50%;
-  }
 
-  .quote .container{
-    padding: 50px;
-  }
-  
-  .quote figure{
-    gap: 40px;
-  }
- .signUp .container{
-    padding: 0 10px;
-  }
-  .signUp .text p{
-    margin-top: 10px;
-    padding-right: 80px;
-  }
-  .signButton{
-    padding: 5px 10px;
-    width: 200px;
-    text-align: center;
-  }
 }
+
+.quote{
+  height: 100vh;
+}
+
+.quote .container{
+  flex-direction: column;
+  width: 80%;
+  
+}
+.quote figure{
+  gap: 30px;
+}
+
+.quote p{
+  font-size: 24px;
+}
+
+.quote figcaption{
+  font-size: 18px;
+}
+
+.signUp{
+  height: 100vh;
+}
+
+.signUp .container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  border-radius: 0;
+  text-align: center;
+  gap: 30px;
+}
+}
+
